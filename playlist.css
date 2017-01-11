@@ -5,3 +5,8 @@
 .active {
   display: block;
 }
+
+hr {
+
+  font-size: 2px;
+}
