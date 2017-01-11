@@ -1,26 +1,56 @@
-.songs, .playlists, .search {
+.songs,
+.playlists,
+.search {
     display: none;
 }
 
 .active {
-  display: block;
+    display: block;
 }
 
-ul{
-  text-align:center;
-  margin:0px;
-  padding:0px;
-  background-color: #F90;
-  float:left; width:100%;
-}
-ul li a {
-  display:block;
-  padding:10px;
-  text-decoration:none;
-  color:#333;
+.nav-tabs.centered>li,
+.nav-pills.centered>li {
+    float: none;
+    display: inline-block;
+    *display: inline;
+    /* ie7 fix */
+    zoom: 1;
+    /* hasLayout ie7 trigger */
 }
 
-ul li a:hover {
-  background-color:#333;
-  color:#FFF;
+.nav-tabs.centered,
+.nav-pills.centered {
+    text-align: center;
+}
+
+hr {
+    background-color: #bbb;
+    color: #bbb;
+    border: none;
+    height: 1px;
+    width: 95%;
+}
+
+#add-playlist-button {
+    padding: 15px;
+}
+
+#nav-body {
+    background: #F9F9F9;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#page-body {
+    background-color: #E8E0F4;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    right: 0;
 }
