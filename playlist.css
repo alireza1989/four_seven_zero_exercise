@@ -14,6 +14,10 @@ body {
     padding-top: 89px;
 }
 
+p{
+  color: #9772A9;
+}
+
 
 /* Overrding Bootstrap Navigation Tab */
 
@@ -74,37 +78,33 @@ hr {
 }
 
 .list-item {
-    position: relative;
-    overflow: hidden;
+  position:relative;
 }
 
 .playlist-title {
-    position: relative;
-    width: 50%;
-    float: left;
+    vertical-align: middle;
     text-align: left;
     color: #9772A9;
     font-weight: bold;
-    font-size: 20px;
-    margin-top: 5%;
-    margin-left: 14%;
+    font-size: 18px;
+    padding-left: 10%
+    display:inline-block;
 }
 
 img.alb-cover {
-    position: relative;
-    width: 25%;
-    float: left;
-    width: auto;
-    height: auto;
+    width: 20%;
+    height: 80%;
+    vertical-align: middle;
+    display: inline-block;
+    padding-right:5%;
+    border-radius: 5px;
 }
 
 .playlist-select {
-    position: relative;
-    float: right;
-    width: 25%;
-    margin-top: 0%;
-    margin-bottom: 1%;
-    margin-left: 14%;
+    display: inline-block;
+    position: absolute;
+    top: 43%;
+    right:4%;
 }
 
 
@@ -112,6 +112,7 @@ img.alb-cover {
 
 .glyphicon {
     font-size: 40px;
+    color: #9772A9;
 }
 
 .glyphicon.glyphicon-chevron-right {
@@ -121,4 +122,61 @@ img.alb-cover {
 
 .glyphicon.glyphicon-plus {
     font-size: 18px;
+    color: white;
+}
+
+
+
+@media only screen and (max-width: 450px) {
+
+  .list-item {
+    position:relative;
+  }
+
+  .playlist-title {
+      vertical-align: middle;
+      text-align: left;
+      color: #9772A9;
+      font-weight: bold;
+      display: inline-block;
+      font-size: 12px;
+  }
+
+  img.alb-cover {
+      width: 20%;
+      height: 80%;
+      vertical-align: middle;
+      display: inline-block;
+      padding-right:5%
+      border-radius: 5px;
+
+  }
+
+  .playlist-select {
+
+      display: inline-block;
+      position: absolute;
+      top: 43%;
+      right:5%;
+
+  }
+
+
+  /* Glyphicon Size */
+
+  .glyphicon {
+      font-size:25px;
+      color: #9772A9;
+  }
+
+  .glyphicon.glyphicon-chevron-right {
+      font-size: 20px;
+      color: #9772A9;
+  }
+
+  .glyphicon.glyphicon-plus {
+      font-size: 11px;
+      color: white;
+  }
+
 }
