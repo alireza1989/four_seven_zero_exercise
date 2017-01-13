@@ -1,3 +1,5 @@
+/* Included in the template */
+
 .songs,
 .playlists,
 .search {
@@ -8,17 +10,22 @@
     display: block;
 }
 
-.nav-tabs.centered>li,
+body {
+    padding-top: 89px;
+}
+
+
+/* Overrding Bootstrap Navigation Tab */
+
+.navbar-default.navbar-fixed-top.centered>li,
 .nav-pills.centered>li {
     float: none;
     display: inline-block;
     *display: inline;
-    /* ie7 fix */
     zoom: 1;
-    /* hasLayout ie7 trigger */
 }
 
-.nav-tabs.centered,
+.navbar-default.navbar-fixed-top.centered,
 .nav-pills.centered {
     text-align: center;
 }
@@ -45,6 +52,17 @@ hr {
     right: 0;
 }
 
+#nav-fixed-pos {
+    background: #F9F9F9;
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
 #page-body {
     background-color: #E8E0F4;
     width: 100%;
@@ -53,4 +71,54 @@ hr {
     top: 0;
     left: 0;
     right: 0;
+}
+
+.list-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.playlist-title {
+    position: relative;
+    width: 50%;
+    float: left;
+    text-align: left;
+    color: #9772A9;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 5%;
+    margin-left: 14%;
+}
+
+img.alb-cover {
+    position: relative;
+    width: 25%;
+    float: left;
+    width: auto;
+    height: auto;
+}
+
+.playlist-select {
+    position: relative;
+    float: right;
+    width: 25%;
+    margin-top: 0%;
+    margin-bottom: 1%;
+    margin-left: 14%;
+}
+
+
+/* Glyphicon Size */
+
+.glyphicon {
+    font-size: 40px;
+}
+
+.glyphicon.glyphicon-chevron-right {
+    font-size: 30px;
+    color: #9772A9;
+}
+
+.glyphicon.glyphicon-plus {
+    font-size: 18px;
 }
