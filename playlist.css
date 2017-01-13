@@ -1,21 +1,12 @@
-/* Included in the template */
-
-.songs,
-.playlists,
-.search {
-    display: none;
-}
-
-.active {
-    display: block;
-}
+/* custom css */
 
 body {
     padding-top: 89px;
+    background-color: #E8E0F4;
 }
 
-p{
-  color: #9772A9;
+p {
+    color: #9772A9;
 }
 
 
@@ -34,16 +25,9 @@ p{
     text-align: center;
 }
 
-hr {
-    background-color: #bbb;
-    color: #bbb;
-    border: none;
-    height: 1px;
-    width: 95%;
-}
-
 #add-playlist-button {
     padding: 15px;
+    width: 94%;
 }
 
 #nav-body {
@@ -78,7 +62,11 @@ hr {
 }
 
 .list-item {
-  position:relative;
+    position: relative;
+}
+
+li.list-item {
+    border-bottom: 2px solid #bbb;
 }
 
 .playlist-title {
@@ -87,8 +75,7 @@ hr {
     color: #9772A9;
     font-weight: bold;
     font-size: 18px;
-    padding-left: 10%
-    display:inline-block;
+    display: inline-block;
 }
 
 img.alb-cover {
@@ -96,15 +83,17 @@ img.alb-cover {
     height: 80%;
     vertical-align: middle;
     display: inline-block;
-    padding-right:5%;
-    border-radius: 5px;
+    padding-right: 5%;
+    border-radius: 3px;
+    padding-bottom: 2%;
+    padding-top: 2%;
 }
 
 .playlist-select {
     display: inline-block;
     position: absolute;
     top: 43%;
-    right:4%;
+    right: 4%;
 }
 
 
@@ -117,7 +106,7 @@ img.alb-cover {
 
 .glyphicon.glyphicon-chevron-right {
     font-size: 30px;
-    color: #9772A9;
+    color: #696969;
 }
 
 .glyphicon.glyphicon-plus {
@@ -125,58 +114,57 @@ img.alb-cover {
     color: white;
 }
 
-
+li.list-item:active {
+    background-color: #8A2BE2;
+}
 
 @media only screen and (max-width: 450px) {
-
-  .list-item {
-    position:relative;
-  }
-
-  .playlist-title {
-      vertical-align: middle;
-      text-align: left;
-      color: #9772A9;
-      font-weight: bold;
-      display: inline-block;
-      font-size: 12px;
-  }
-
-  img.alb-cover {
-      width: 20%;
-      height: 80%;
-      vertical-align: middle;
-      display: inline-block;
-      padding-right:5%
-      border-radius: 5px;
-
-  }
-
-  .playlist-select {
-
-      display: inline-block;
-      position: absolute;
-      top: 43%;
-      right:5%;
-
-  }
-
-
-  /* Glyphicon Size */
-
-  .glyphicon {
-      font-size:25px;
-      color: #9772A9;
-  }
-
-  .glyphicon.glyphicon-chevron-right {
-      font-size: 20px;
-      color: #9772A9;
-  }
-
-  .glyphicon.glyphicon-plus {
-      font-size: 11px;
-      color: white;
-  }
-
+    .list-item {
+        position: relative;
+    }
+    li.list-item {
+        border-bottom: 2px solid #bbb;
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+    .playlist-title {
+        vertical-align: middle;
+        text-align: left;
+        color: #9772A9;
+        font-weight: bold;
+        display: inline-block;
+        font-size: 12px;
+    }
+    img.alb-cover {
+        width: 20%;
+        height: 80%;
+        vertical-align: middle;
+        display: inline-block;
+        padding-right: 5%;
+        border-radius: 3px;
+        padding-bottom: 2%;
+        padding-top: 2%;
+    }
+    .playlist-select {
+        display: inline-block;
+        position: absolute;
+        top: 33%;
+        right: 5%;
+    }
+    /* Glyphicon Size */
+    .glyphicon {
+        font-size: 25px;
+        color: #9772A9;
+    }
+    .glyphicon.glyphicon-chevron-right {
+        font-size: 20px;
+        color: #696969;
+    }
+    .glyphicon.glyphicon-plus {
+        font-size: 11px;
+        color: white;
+    }
+    #add-playlist-button {
+        padding: 12px;
+    }
 }
