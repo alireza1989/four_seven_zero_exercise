@@ -1,5 +1,9 @@
 /* custom css */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     padding-top: 89px;
     background-color: #E8E0F4;
