@@ -122,6 +122,42 @@ li.list-item:active {
     background-color: #8A2BE2;
 }
 
+
+/*  Button style  */
+.button {
+   border-top: 1px solid #96d1f8;
+   background: #8a2be2;
+   background: -webkit-gradient(linear, left top, left bottom, from(#8a2be2), to(#8a2be2));
+   background: -webkit-linear-gradient(top, #8a2be2, #8a2be2);
+   background: -moz-linear-gradient(top, #8a2be2, #8a2be2);
+   background: -ms-linear-gradient(top, #8a2be2, #8a2be2);
+   background: -o-linear-gradient(top, #8a2be2, #8a2be2);
+   padding: 10.5px 21px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   border-radius: 10px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 18px;
+   font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.button:hover {
+   border-top-color: #8016e3;
+   background: #8016e3;
+   color: #ffffff;
+   }
+.button:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+   }
+
+
+
 @media only screen and (max-width: 450px) {
     .list-item {
         position: relative;

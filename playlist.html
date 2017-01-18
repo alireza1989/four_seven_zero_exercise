@@ -14,17 +14,17 @@
             <nav>
                 <ul class="nav navbar-default navbar-fixed-top centered">
                     <li>
-                        <a href="#"> <span class="glyphicon glyphicon-music"></span>
+                        <a href="#library-tab" data-toggle="tab"> <span class="glyphicon glyphicon-music"></span>
                             <p>Library</p>
                         </a>
                     </li>
                     <li>
-                        <a href="#"> <span class="glyphicon glyphicon-th-list"></span>
+                        <a href="#playlist-tab" data-toggle="tab"> <span class="glyphicon glyphicon-th-list"></span>
                             <p>Playlists</p>
                         </a>
                     </li>
                     <li>
-                        <a href="#"> <span class="glyphicon glyphicon-search"></span>
+                        <a href="#search-tab" data-toggle="tab"> <span class="glyphicon glyphicon-search"></span>
                             <p> Search</p>
                         </a>
                     </li>
@@ -35,13 +35,21 @@
 
 
         <div id="page-body">
-
-            <div class="container-fluid" id="add-playlist-button">
-                <button type="button" class="btn btn-primary btn-lg btn-block"> <span class="glyphicon glyphicon-plus"></span> Playlist </button>
+            
+            
+            <div class="tab-pane" id="library-tab">
+                <div class='row'>
+                    <button class="button"> Sort by artist </button>
+                    <button class="button"> Sort by title </button>
+                    hello
+                </div>    
             </div>
 
-            <div class="Playlists">
+            <div class="Playlists" class="tab-pane" id="playlist-tab">
 
+                <div class="container-fluid" id="add-playlist-button">
+                    <button type="button" class="btn btn-primary btn-lg btn-block"> <span class="glyphicon glyphicon-plus"></span> Playlist </button>
+                </div>
 
                 <ul>
                     <li class="container list-item">
@@ -112,6 +120,11 @@
 
                 </ul>
             </div>
+
+            <div class="tab-pane" id="search-tab">
+
+            </div>    
+
         </div>
     </div>
 
